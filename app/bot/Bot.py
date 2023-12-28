@@ -1,7 +1,8 @@
 import telebot
 from Methods import get_model_answer
+from FetchToken import fetch_tg_api
 
-API_TOKEN = '<api_token>'
+API_TOKEN = fetch_tg_api()
 
 bot = telebot.TeleBot(API_TOKEN)
 
